@@ -13,19 +13,19 @@
 }
 body{
 	background-color: #ddd;
-	font-size: 2vh;
+	font-size: 1.5rem;
 	overflow-y:auto;
 }
 .top-bar{
 	z-index: 10;
 	position: fixed;
 	width: 100%;
-	padding: 0vh 2vh;
+	padding: 0 1rem;
 	border-bottom: 1px solid #eeeeee11;
 	background-color: #111;
 	background-color: transparent;
 	color: #eeeeeeaa;
-	font-size: 2vh;
+	font-size: 2rem;
 	text-align: right;
 	list-style-type: none;
 	transition: 0.3s;
@@ -53,7 +53,7 @@ body{
 	float: left;
 }
 .top-item.asign i{
-	font-size: 3vh;
+	font-size: 2rem;
 }
 .top-item.asign:hover{
 	color: #fff;
@@ -66,11 +66,11 @@ body{
 }
 .top-item.language, .top-item.asign{
 	cursor: pointer;
-	padding: 5vh 1.5vh;
+	padding: 3rem 1rem;
 }
 .top-bar.scrolled > .top-item.language,
 .top-bar.scrolled > .top-item.asign{
-	padding: 2vh 1.5vh;
+	padding: 1rem 1rem;
 }
 .top-item.language:hover{
 	color: #eeeeee;
@@ -92,7 +92,7 @@ body{
 	background-position: 45% 420%;
 	color: #eeeeeeaa;
 	text-align: center;
-	font-size: 2.5vh;
+	font-size: 2rem;
 	letter-spacing: 0.3vh;
 }
 .marquee-frame{
@@ -131,7 +131,7 @@ body{
 	letter-spacing: 1vh;
 }
 .marquee-penant{
-	font-size: 6vh;
+	font-size: 3rem;
 	letter-spacing: 1vw;
 	text-transform: uppercase;
 	font-family: 'Cinzel', serif;
@@ -156,7 +156,7 @@ body{
 	margin: 2vh auto 0;
 	padding: 0vh 3vh;
 	color: #eeeeee22;
-	font-size: 2vh;
+	font-size: 1.2rem;
 	transition: 0.6s;
 	line-height: 3vh;
 	text-align: justify;
@@ -171,12 +171,12 @@ body{
 	max-width: 1000px;
 	width: 100%;
 	margin: auto;
-	padding: 1vh;
+	padding: 0.6rem;
 	color: #eeeeee77;
 	transition: 0.2s;
 }
 .marquee-more .material-icons{
-	font-size: 4vh;
+	font-size: 2rem;
 }
 .marquee-more:hover{
 	/*padding: 2vh;*/
@@ -185,7 +185,7 @@ body{
 	transform: translate(0, 0.6vh);
 }
 .marquee-more.active:hover{
-	padding: 1vh;
+	padding: 0.6rem;
 	transform: translate(0, -0.6vh);
 }
 .marquee-more > i{
@@ -200,7 +200,7 @@ body{
 	width: 100%;
 	background-color: #1a1a1a;
 	color: #eeeeeeaa;
-	font-size: 2vh;
+	font-size: 1.5rem;
 	text-align: center;
 	list-style-type: none;
 }
@@ -249,7 +249,7 @@ body{
 }
 .field-title{
 	margin-top: 2vh;
-	font-size: 3vh;
+	font-size: 1.8rem;
 }
 .field-line{
 	margin: 1vh 0;
@@ -282,7 +282,7 @@ body{
 	border-radius: 4vh;
 	background-color: #222;
 	color: #eeeeeeaa;
-	font-size: 2vh;
+	font-size: 1.5rem;
 	font-family: 'Quicksand', sans-serif;
 	text-transform: uppercase;
 	transition: 0.3s;
@@ -296,10 +296,10 @@ body{
 .board{
 	position: sticky;
 	width: 100%;
-	padding: 1vh;
+	padding: 0.6rem;
 	background-color: #111;
 	color: #eeeeeeaa;
-	font-size: 2vh;
+	font-size: 1.2rem;
 	text-align: center;
 	list-style-type: none;
 }
@@ -355,7 +355,7 @@ body{
 	margin: 0 auto 2vh;
 	color: #222;
 	text-align: center;;
-	font-size: 8vh;
+	font-size: 4rem;
 	letter-spacing: 1vw;
 	text-transform: uppercase;
 	font-family: 'Cinzel', serif;

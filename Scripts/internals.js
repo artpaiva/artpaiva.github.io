@@ -1,6 +1,5 @@
 var scrolled = false;
 window.onscroll = function (){ 
-	console.log(document.documentElement.scrollTop);
 	var bar  = document.getElementById('barra');
 	if (document.documentElement.scrollTop > 20 ) {
 		bar.classList.add("scrolled");

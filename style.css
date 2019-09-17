@@ -211,6 +211,14 @@ body{
 	padding: 3vh 12vh;
 	transition: 0.3s;
 }
+@media only screen and (max-width: 600px) {
+	.baldachin-item{
+		display: block;
+		flex-basis: 0;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+}
 .baldachin-item.active{
 	background-color: #ffffff03;
 	color: #ffcc22aa;

@@ -1,4 +1,3 @@
-# artpaiva.github.io
----
-permalink: /index.html
----
+-Artur Paiva-
+-
+A personal page

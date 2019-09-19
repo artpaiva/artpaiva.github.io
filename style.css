@@ -348,7 +348,7 @@ body{
 
 .floor{
 	padding: 4vh;
-  	border-top: 0.6rem solid #aaa;
+  	border-top: 0.6rem solid #555;
 	background-color: #111;
 	color: #eeeeeeaa;
 }

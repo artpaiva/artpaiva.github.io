@@ -13,44 +13,48 @@
 }
 body{
 	background-color: #ddd;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	overflow-y:auto;
 }
 .top-bar{
 	z-index: 10;
 	position: fixed;
 	width: 100%;
-	padding: 0 1rem;
-	border-bottom: 1px solid #eeeeee11;
+	padding: 0 0.6rem;
+	/*border-bottom: 1px solid #eeeeee11;*/
 	background-color: #111;
 	background-color: transparent;
 	color: #eeeeeeaa;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-align: right;
 	list-style-type: none;
 	transition: 0.3s;
 }
 .top-bar.scrolled{
 	border-bottom: 1px solid #eeeeee00;
-	/*box-shadow: 0px 2vh 2vh 0px #00000022;*/
 	background-color: #111;
 }
 .top-item{
 	display: inline-block;
-	padding: 0vh 1vh;
+	padding: 0vh 0.6vh;
 	transition: 0.3s;
 }
 .top-item.separator{
-	content: '|';
 	color: #eeeeee55;
 }
 .top-item.separator:before{
 	content: '|';
+	color: transparent;
+}
+.top-bar.scrolled > .top-item.separator:before{
+	color: #eeeeee55;
 }
 .top-item.asign{
 	pointer-events: none;
 	opacity: 0;
 	float: left;
+	max-width: 0px;
+	overflow: hidden;
 }
 .top-item.asign i{
 	font-size: 1.4rem;
@@ -58,7 +62,7 @@ body{
 .top-item.asign:hover{
 	color: #fff;
 	transform: translate(0, -0.4vh);
-	filter: drop-shadow(0vh 0vh 2px #ffcc22);
+	filter: drop-shadow(0vh -1px 2px #ffcc22);
 }
 .top-bar.scrolled > *.top-item.asign{
 	pointer-events: auto;
@@ -66,18 +70,18 @@ body{
 }
 .top-item.language, .top-item.asign{
 	cursor: pointer;
-	padding: 3rem 1rem;
+	padding: 3rem 0.6rem;
 }
 .top-bar.scrolled > .top-item.language,
 .top-bar.scrolled > .top-item.asign{
-	padding: 1rem 1rem;
+	padding: 0.6rem 1rem;
 }
 .top-item.language:hover{
 	color: #eeeeee;
 	transform: translate(0, -0.4vh);
 }
 .top-item.active{
-	color: #ffcc22aa;
+	color: #ffcc22;
 }
 .top-item.active:hover{
 	color: #ffcc22dd;
@@ -97,9 +101,9 @@ body{
 }
 .marquee-frame{
 	position: relative;
-	margin: 2vh auto;
-	width: 20vh;
-	height: 20vh;
+	margin: 3rem auto;
+	width: 10rem;
+	height: 10rem;
 	padding: 1vh;
 	border: 0.3vh solid #eeeeeeaa;
 	border-radius: 50%;
@@ -244,8 +248,17 @@ body{
 	/*box-shadow: 2px 5px 6px 1px #00000011;*/
 	background-color: #eee;
 	color: #555;
-	padding: 4vh 4vh 8vh;
+	padding: 1.2rem 3rem 2.4rem;
 	text-align: justify;
+}
+@media only screen and (max-width: 600px) {
+	.field{
+		padding: 1.2rem 1rem 2.4rem;
+		display: block;
+		flex-basis: 0;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
 }
 .field-title{
 	margin-top: 2vh;
@@ -278,17 +291,17 @@ body{
 	cursor: pointer;
 	display: block;
 	margin: 3vh auto;
-	padding: 1rem 5rem;
-	border-radius: 4vh;
+	padding: 0.8rem 5.4rem;
+	border-radius: 3rem;
 	background-color: #222;
-	color: #eeeeeeaa;
+	color: #ffffffbb;
 	font-size: 1.2rem;
 	font-family: 'Quicksand', sans-serif;
 	text-transform: uppercase;
 	transition: 0.3s;
 }
 .field-button:hover{
-	color: #eeeeeedd;
+	color: #ffffffdd;
 	background-color: #333;
 	box-shadow: 0px 4px 4px 0px #00000022;
 }
@@ -348,7 +361,7 @@ body{
 
 .floor{
 	padding: 4vh;
-  	border-top: 0.6rem solid #444;
+  	border-top: 0.6rem solid #333333;
 	background-color: #111;
 	color: #eeeeeeaa;
 }
@@ -400,3 +413,73 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #333; 
 }
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table td, table th {
+    border: 1px solid #aaa;
+}
+.know-table{
+	box-sizing: border-box;
+	margin: 2rem auto;
+	width: 100%;
+	max-width: 700px;
+	font-size: 1rem;
+}
+.know-icon img{
+	width: 2.4rem;
+	height: 2.4rem;
+}
+.know-table td{
+	padding: 1.4rem;
+}
+
+.grid-box{
+	text-align: center;
+}
+.grid-card{
+	margin: auto;
+	display: inline-block;
+	flex-basis: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+	width: 8rem;
+	height: 8rem;
+	overflow: hidden;
+	text-align: center;
+}
+.grid-card img{
+	width: 100%;
+	height: 100%;
+}
+.breadcrumb-box{
+	padding: 0 0.2rem 0.8rem;
+	border-bottom: 1px solid #00000008;
+ 	text-align: left;
+}
+.breadcrumb-bran, .breadcrumb-bran a{
+  cursor: pointer;
+  color: #555;
+  font-size: 1rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+.breadcrumb-bran:hover a{
+  color: #333;
+}
+.breadcrumb-bran:after{
+  content: '›';
+  padding: 1rem;
+  color: #999;
+}
+.breadcrumb-bran.active, .breadcrumb-bran.active a{
+  cursor: auto;
+  color: #999;
+}
+.breadcrumb-bran.active:after{
+  content: none;
+}
+

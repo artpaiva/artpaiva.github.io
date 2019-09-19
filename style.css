@@ -297,6 +297,7 @@ body{
 	position: sticky;
 	width: 100%;
 	padding: 0.6rem;
+  	border-top: 0.6rem solid #aaa;
 	background-color: #111;
 	color: #eeeeeeaa;
 	font-size: 1.2rem;
